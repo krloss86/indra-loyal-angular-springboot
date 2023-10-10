@@ -6,7 +6,8 @@ import { LoginComponent } from './login/login.component';
 const routes: Routes = [
   {
     path:'login', component:LoginComponent
-  }
+  },
+  /*agregar ruta para dashboard */
 ];
 
 @NgModule({
