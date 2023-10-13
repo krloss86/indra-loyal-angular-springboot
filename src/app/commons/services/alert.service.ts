@@ -6,9 +6,9 @@ export interface IMensaje {
   text: string
 }
 
-@Injectable({
+@Injectable(/*{
   providedIn: 'root'
-})
+}*/)
 export class AlertService {
 
   private subject = new Subject<IMensaje>();//emitir mensajes
