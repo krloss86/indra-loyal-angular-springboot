@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { LoginGuardService } from './services/login-guard.service';
 import { ProfileResolveService } from './services/profile-resolve.service';
+import { CanExitService } from './services/can-exit.service';
 
 const routes: Routes = [
   {
@@ -10,7 +11,8 @@ const routes: Routes = [
     resolve: {
       profile: ProfileResolveService
     },
-    canActivate:[LoginGuardService]
+    canActivate:[LoginGuardService],
+    canDeactivate:[CanExitService]
   },
 ];
 

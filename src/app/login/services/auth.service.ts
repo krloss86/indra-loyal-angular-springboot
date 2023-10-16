@@ -15,7 +15,7 @@ export class AuthService {
 
   login(username: string | null, password: string | null) {
     //aca mismo una vez "logueados" guardemos los datos del usuario en localstorage
-    return this.httpClient.post(environment.LOGIN_URL,
+    return this.httpClient.post(`${environment.BASE_PATH_URL}/login`,
       {
         username: username || '',
         password: password || ''
@@ -29,5 +29,9 @@ export class AuthService {
         return user;
       })
     );
+  }
+
+  logout(): void {
+    localStorage.removeItem(UsuarioEnum.LOGGED_USER);
   }
 }
