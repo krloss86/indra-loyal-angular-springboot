@@ -35,10 +35,10 @@
                 
                 <!-- Content Row -->
                 <div class="row">
-                    <div class="col-lg-6 mb-4">
-                        <app-saldo></app-saldo>
+                    <div class="col-lg-9 mb-4">
+                        <app-contacto [cliente]="informacionCliente?.cliente"></app-contacto>
                     </div>
-                    <div class="col-lg-6 mb-4">
+                    <div class="col mb-4">
                         <app-recomendacion [recomendaciones]="informacionCliente?.recomendaciones"></app-recomendacion>
                     </div>
                 </div>

@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
 import { ClientService } from '../services/client.service';
 import { ClientDataService } from './../services/client-data.service';
+import { ActivatedRoute } from '@angular/router';
+import { Profile } from '../models/profile';
 
 @Component({
   selector: 'app-topbar',
@@ -10,10 +12,13 @@ import { ClientDataService } from './../services/client-data.service';
 })
 export class TopbarComponent implements OnInit {
 
+  profile?: Profile;
+
   constructor(
     private formBuilder: FormBuilder,
     private clienteService: ClientService,//http
     private clienteDataService: ClientDataService, //servicio contenedor de datos
+    private activatRoute: ActivatedRoute,
     ) { }
 
   searchForm = this.formBuilder.group(
@@ -22,6 +27,8 @@ export class TopbarComponent implements OnInit {
     }
   );
   ngOnInit(): void {
+    //capturamos el datos que retorna el resolve bajo la clave profile
+    this.profile = this.activatRoute.snapshot.data['profile'];
   }
 
   executeSearch(): void {

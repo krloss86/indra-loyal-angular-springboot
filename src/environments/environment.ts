@@ -4,6 +4,7 @@
 
 export const environment = {
   production: false,
+  BASE_PATH_URL: 'https://reqres.in/api',
   LOGIN_URL: 'https://reqres.in/api/login',
   CLIENT_DATA: '/assets/datos.json',
   CLIENT_ENDPOINT: 'http://localhost:4200'

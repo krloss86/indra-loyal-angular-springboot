@@ -13,6 +13,9 @@ import { TopbarComponent } from './topbar/topbar.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ClientDataService } from './services/client-data.service';
 import { ClientService } from './services/client.service';
+import { HTTP_INTERCEPTORS } from '@angular/common/http';
+import { JwtInterceptorService } from './services/jwt-interceptor.service';
+import { ProfileResolveService } from './services/profile-resolve.service';
 
 
 @NgModule({
@@ -45,11 +48,10 @@ import { ClientService } from './services/client.service';
   providers:[
     ClientService,
     ClientDataService,
-    /*
+    ProfileResolveService,
     {
-      provide: jwt
+      provide: HTTP_INTERCEPTORS,useClass: JwtInterceptorService, multi: true
     }
-    */
   ]
 })
 export class DashboardModule { }

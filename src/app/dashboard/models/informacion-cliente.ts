@@ -1,3 +1,7 @@
+export const UsuarioEnum = {
+  LOGGED_USER: 'LOGGED_USER',
+}
+
 export interface InformacionCliente {
   saldos: Saldos;
   equipo: Equipo;
