@@ -1,0 +1,108 @@
+{
+    "saldos": {
+      "datosSaldos": [
+        {
+          "titulo": "CRÉDITO DE RECARGA",
+          "fecha": "22-jul",
+          "descripcion": "YY ZZ.YYY"
+        },
+        {
+          "titulo": "CRÉDITO PROMOCIONAL",
+          "fecha": "22-jul",
+          "descripcion": "XX YY.ZZZ"
+        },
+        {
+          "titulo": "INTERNET",
+          "fecha": "Vto. 16-oct 12:30 AM",
+          "descripcion": "150 MB"
+        },
+        {
+          "titulo": "WHATSAPP",
+          "fecha": "13/10/2023",
+          "descripcion": "Disponible"
+        },
+        {
+          "titulo": "LLAMADAS DE REGALO",
+          "fecha": "13/10/223",
+          "descripcion": "Ilimitado"
+        }
+      ]
+    },
+    "equipo": {
+      "datosEquipo": [
+        {
+          "titulo": "ANTIGUEDAD",
+          "dato": "1 año de antiguedad"
+        },
+        {
+          "titulo": "ESTADO",
+          "dato": "linea ACTIVA"
+        },
+        {
+          "titulo": "FABRICANTE",
+          "dato": "SONY"
+        },
+        {
+          "titulo": "EQUIPOENUSO",
+          "dato": "SI"
+        },
+        {
+          "titulo": "MISDN",
+          "dato": "9887766332"
+        },
+        {
+          "titulo": "IMEI",
+          "dato": "1234567890"
+        }
+      ]
+    },
+    "cliente": {
+      "contactos": [
+        {
+          "fecha": "Ayer 11:09",
+          "empresa": "CLARO",
+          "descripcion": "Te acreditamos CODZZ123. Recibiste de regalo CODIGOXXXX promocionales y 300 MB. Info de saldos y consumos *YYY#. Trans..."
+        },
+        {
+          "fecha": "Ayer 11:09",
+          "empresa": "CLARO",
+          "descripcion": "Te acreditamos CODZZ123. Recibiste de regalo CODIGOXXXX promocionales y 300 MB. Info de saldos y consumos *YYY#. Trans..."
+        },
+        {
+          "fecha": "Ayer 11:09",
+          "empresa": "CLARO",
+          "descripcion": "Te acreditamos CODZZ123. Recibiste de regalo CODIGOXXXX promocionales y 300 MB. Info de saldos y consumos *YYY#. Trans..."
+        },
+        {
+          "fecha": "Ayer 11:09",
+          "empresa": "CLARO",
+          "descripcion": "Te acreditamos CODZZ123. Recibiste de regalo CODIGOXXXX promocionales y 300 MB. Info de saldos y consumos *YYY#. Trans..."
+        }
+      ]
+    },
+    "recomendaciones": {
+      "recomendaciones": [
+        {
+            "titulo": "OFERTA",
+            "subTitulo": "Nuevo Equipo",
+            "descripcion": "Moto edge 30 Ultra."
+        },
+        {
+          "titulo": "+ GIGAS",
+          "subTitulo": "Pack 5gb",
+          "descripcion": "Mas Gigas por 15 días."
+        },
+        {
+            "titulo": "OFERTA",
+            "subTitulo": "Nuevo Equipo",
+            "descripcion": "Moto edge 30 Ultra."
+        },
+        {
+          "titulo": "+ GIGAS",
+          "subTitulo": "Pack 5gb",
+          "descripcion": "Mas Gigas por 15 días."
+        }
+      ]
+    }
+  }
+  

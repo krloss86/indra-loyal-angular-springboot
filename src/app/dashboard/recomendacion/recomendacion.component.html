@@ -1,0 +1,19 @@
+<div class="card shadow mb-4">
+    <div class="card-header py-3">
+      <h6 class="m-0 font-weight-bold text-primary">Recomendaciones</h6>
+    </div>
+    <div class="card-body">
+    <h4 *ngIf="recomendaciones && recomendaciones.recomendaciones.length === 0" class="small font-weight-bold">No hay datos que mostrar.</h4>
+      <div class="row">
+        <div class="col" *ngIf="recomendaciones && recomendaciones.recomendaciones.length > 0">
+            <div *ngFor="let recomendacion of recomendaciones.recomendaciones" class="card bg-success text-white shadow">
+                <div class="card-body">
+                    <h4>{{recomendacion.titulo}}</h4>
+                    <h5>{{recomendacion.descripcion}}</h5>
+                    <!-- <h6>{{recomendacion.subTitulo}}</h6> -->
+                    <a href="#" class="text-white small">Recomendar</a>
+                </div>
+            </div>
+        </div>    
+    </div>
+</div>
