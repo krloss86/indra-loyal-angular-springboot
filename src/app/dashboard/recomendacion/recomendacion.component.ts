@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Recomendaciones } from '../models/informacion-cliente';
 
 @Component({
   selector: 'app-recomendacion',
@@ -7,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RecomendacionComponent implements OnInit {
 
+  @Input() recomendaciones?: Recomendaciones
+  
   constructor() { }
 
   ngOnInit(): void {

@@ -26,10 +26,10 @@
                 <!-- Content Row -->
                 <div class="row">
                     <div class="col-lg-6 mb-4">
-                        <app-saldo></app-saldo>
+                        <app-saldo [saldos]="informacionCliente?.saldos"></app-saldo>
                     </div>
                     <div class="col-lg-6 mb-4">
-                        <app-recomendacion></app-recomendacion>
+                        <app-datos-equipo [equipo]="informacionCliente?.equipo"></app-datos-equipo>
                     </div>
                 </div>
                 
@@ -39,7 +39,7 @@
                         <app-saldo></app-saldo>
                     </div>
                     <div class="col-lg-6 mb-4">
-                        <app-recomendacion></app-recomendacion>
+                        <app-recomendacion [recomendaciones]="informacionCliente?.recomendaciones"></app-recomendacion>
                     </div>
                 </div>
             </div>

@@ -4,7 +4,9 @@
 
 export const environment = {
   production: false,
-  LOGIN_URL: 'https://reqres.in/api/login'
+  LOGIN_URL: 'https://reqres.in/api/login',
+  CLIENT_DATA: '/assets/datos.json',
+  CLIENT_ENDPOINT: 'http://localhost:4200'
 };
 
 /*

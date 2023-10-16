@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Saldos } from '../models/informacion-cliente';
 
 @Component({
   selector: 'app-saldo',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./saldo.component.css']
 })
 export class SaldoComponent implements OnInit {
+
+  @Input() saldos?: Saldos;
 
   constructor() { }
 
