@@ -43,5 +43,6 @@ export class TopbarComponent implements OnInit {
 
   resetSearch(): void {
     this.searchForm.reset();
+    this.clienteDataService.clear();
   }
 }
