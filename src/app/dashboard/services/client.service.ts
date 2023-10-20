@@ -17,7 +17,7 @@ export class ClientService {
   public search(numeroTelefono: number): Observable<InformacionCliente> {
     console.log('numeroTelefono:', numeroTelefono);
     return this.httpClient.get<InformacionCliente>(
-      `${environment.CLIENT_ENDPOINT}${this.clientData}`
+      `${environment.CLIENT_ENDPOINT}${numeroTelefono}`
     );
     
     //http://localhost:4200/assets/datos.json

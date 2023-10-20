@@ -3,6 +3,7 @@ import { ActivatedRouteSnapshot, Resolve, RouterStateSnapshot } from '@angular/r
 import { Profile } from '../models/profile';
 import { HttpClient } from '@angular/common/http';
 import { environment } from 'src/environments/environment';
+import { UsuarioEnum } from '../models/informacion-cliente';
 
 @Injectable(/*{
   providedIn: 'root'
@@ -14,6 +15,8 @@ export class ProfileResolveService implements Resolve<Profile> {
   ) { }
   
   resolve(route: ActivatedRouteSnapshot, state: RouterStateSnapshot) {
-    return this.httpClient.get<Profile>(`${environment.BASE_PATH_URL}/users/2`);
+    const userLogged = localStorage.getItem(UsuarioEnum.LOGGED_USER) || '';//string
+    const user = JSON.parse(userLogged);
+    return this.httpClient.get<Profile>(`${environment.BASE_PATH_URL}/api/cliente/${user.id}`);
   }
 }

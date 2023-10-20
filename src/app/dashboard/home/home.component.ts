@@ -41,7 +41,6 @@ export class HomeComponent implements OnInit, CanComponentDeactivate {
 
   //defino el metodo que "mira" el CanDeactivate para decidir que hacer
   canDeactivate(): boolean {
-    debugger;
     let descartarCambios = true;
     if(this.hayCambios) {
       descartarCambios = confirm('Hay cambios sin guardar ¿confirma que desea descarlos?');
