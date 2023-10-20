@@ -4,9 +4,9 @@
 
 export const environment = {
   production: false,
-  BASE_PATH_URL: 'https://reqres.in/api',
+  BASE_PATH_URL: 'http://localhost:8081/miapp',
   CLIENT_DATA: '/assets/datos.json',
-  CLIENT_ENDPOINT: 'http://localhost:4200'
+  CLIENT_ENDPOINT: 'http://localhost:8081/miapp/api/cliente/'
 };
 
 /*
