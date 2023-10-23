@@ -28,6 +28,10 @@ export class ClientDataService {
     this.subject.next(this.datosVacios);
   }
   public updateCliente(nuevoCliente: InformacionCliente): void {
-    this.subject.next(nuevoCliente);
+    if(nuevoCliente.equipo === null) {
+      this.subject.next(this.datosVacios);
+    }else {
+      this.subject.next(nuevoCliente);
+    }
   }
 }

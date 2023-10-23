@@ -17,6 +17,12 @@ export class ProfileResolveService implements Resolve<Profile> {
   resolve(route: ActivatedRouteSnapshot, state: RouterStateSnapshot) {
     const userLogged = localStorage.getItem(UsuarioEnum.LOGGED_USER) || '';//string
     const user = JSON.parse(userLogged);
-    return this.httpClient.get<Profile>(`${environment.BASE_PATH_URL}/api/cliente/${user.id}`);
+    //return this.httpClient.get<Profile>(`${environment.BASE_PATH_URL}/api/cliente/${user.id}`);
+    const profile:Profile ={
+      id: user.id,
+      roles: user.rolesDelUsuario,
+      username:  user.username
+    };
+    return profile;
   }
 }
